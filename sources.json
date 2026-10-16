@@ -1,0 +1,48 @@
+{
+  "upstreams": {
+    "backnotprop/bro": {
+      "url": "https://github.com/backnotprop/bro",
+      "license": "none",
+      "importedCommit": "3737bf2b3e5ef8f44639ebf6e6bbbf821b3edfb9",
+      "importedAt": "2026-10-16",
+      "skills": {
+        "readback": {
+          "path": "skills/readback/SKILL.md",
+          "blob": "d568683fc37046628c9d9311b1c71ccc57a8294d"
+        },
+        "big-pics-little-words": {
+          "path": "skills/big-pics-little-words/SKILL.md",
+          "blob": "d30e737129c9194772c7f8eb6e2ba01a6ab42c0d"
+        },
+        "clean-room": {
+          "path": "skills/clean-room/SKILL.md",
+          "blob": "8de42265b04ef7c7aa98b5b2825c1043593e7530"
+        }
+      }
+    },
+    "cursor/plugins": {
+      "url": "https://github.com/cursor/plugins/tree/main/pstack",
+      "license": "none",
+      "importedCommit": "f713f14203cd6420cec13cd7c55c32d598dbab68",
+      "importedAt": "2026-10-16",
+      "skills": {
+        "bro": {
+          "path": "pstack/skills/bro/SKILL.md",
+          "blob": "b1701b778639c08bfc306291d70170c525c66a68"
+        }
+      }
+    },
+    "mattpocock/skills": {
+      "url": "https://github.com/mattpocock/skills",
+      "license": "MIT",
+      "importedCommit": "49dd158d1076134a641b33efb035946536778336",
+      "importedAt": "2026-10-16",
+      "skills": {
+        "handoff": {
+          "path": "skills/productivity/handoff/SKILL.md",
+          "blob": "a224edc643a20ddb989f9bca1547440169159810"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "skillionaire",
+  "owner": { "name": "Dominic Reber" },
+  "description": "Personal skills marketplace.",
+  "plugins": [
+    {
+      "name": "skillionaire",
+      "source": "./",
+      "description": "Small personal set of agent skills.",
+      "category": "productivity"
+    }
+  ]
+}
