@@ -29,8 +29,10 @@ Every skill is imported from an upstream repository at the commit pinned in
 - `handoff` from [mattpocock/skills](https://github.com/mattpocock/skills) (MIT, see `THIRD_PARTY_NOTICES.md`)
 - the other three from [backnotprop/bro](https://github.com/backnotprop/bro)
 
-Run `scripts/check-upstream.sh` (needs `gh` and `jq`) to see which skills
-changed upstream since the import.
+Run `scripts/check-upstream.sh` (needs `gh` and `jq`) to see, per skill, whether
+it changed upstream, was edited here (with the commit that last touched it), or
+both. `scripts/check-upstream.sh --diff <skill>` shows the local edits against
+the pinned upstream version.
 
 The pstack and backnotprop repositories have no license file, so `bro`,
 `readback`, `big-pics-little-words` and `clean-room` are copied without

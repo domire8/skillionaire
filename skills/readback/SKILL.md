@@ -1,6 +1,6 @@
 ---
 name: readback
-description: Clearly restate a human's request so they can confirm alignment before work begins. Use when the human explicitly invokes /readback or $readback after a long, dictated, unclear, or complex prompt; never invoke automatically.
+description: Clearly restate a human's request so they can confirm alignment before work begins.
 disable-model-invocation: true
 ---
 
