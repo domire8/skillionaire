@@ -41,6 +41,14 @@
         "handoff": {
           "path": "skills/productivity/handoff/SKILL.md",
           "blob": "a224edc643a20ddb989f9bca1547440169159810"
+        },
+        "grilling": {
+          "path": "skills/productivity/grilling/SKILL.md",
+          "blob": "df69d9936880cd3314c28858c6c52f48db23b856"
+        },
+        "grill-me": {
+          "path": "skills/productivity/grill-me/SKILL.md",
+          "blob": "3947ff9c4ad980d14fc07fccbf659d47c114e81d"
         }
       }
     }

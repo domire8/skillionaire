@@ -11,6 +11,9 @@
     "./skills/readback",
     "./skills/handoff",
     "./skills/big-pics-little-words",
-    "./skills/clean-room"
+    "./skills/clean-room",
+    "./skills/many-ways",
+    "./skills/grilling",
+    "./skills/grill-me"
   ]
 }

@@ -9,6 +9,9 @@ A small personal set of agent skills for Claude Code.
 | `handoff` | Compacts the conversation into a handoff document for another agent. |
 | `big-pics-little-words` | Explains the current subject in HTML with big visuals and few words. |
 | `clean-room` | Gets an independent decision from a fresh agent that sees none of the conversation. |
+| `many-ways` | Lays out four or five genuinely different approaches with trade-offs, before committing to one. |
+| `grilling` | Interviews you in rounds of questions, each with a recommended answer, until the plan has no open decisions. |
+| `grill-me` | Manual-only entry point to `grilling`. |
 
 ## Install as a plugin
 
@@ -26,7 +29,8 @@ Every skill is imported from an upstream repository at the commit pinned in
 `sources.json`, together with each file's upstream blob hash:
 
 - `bro` from [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack) (pstack)
-- `handoff` from [mattpocock/skills](https://github.com/mattpocock/skills) (MIT, see `THIRD_PARTY_NOTICES.md`)
+- `handoff`, `grilling` and `grill-me` from [mattpocock/skills](https://github.com/mattpocock/skills) (MIT, see `THIRD_PARTY_NOTICES.md`)
+- `many-ways` is original
 - the other three from [backnotprop/bro](https://github.com/backnotprop/bro)
 
 Run `scripts/check-upstream.sh` (needs `gh` and `jq`) to see, per skill, whether
