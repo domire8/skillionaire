@@ -14,6 +14,7 @@
     "./skills/clean-room",
     "./skills/many-ways",
     "./skills/grilling",
-    "./skills/grill-me"
+    "./skills/grill-me",
+    "./skills/audit-fix"
   ]
 }
