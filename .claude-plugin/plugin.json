@@ -1,6 +1,5 @@
 {
   "name": "skillionaire",
-  "version": "0.1.0",
   "description": "Small personal set of agent skills: plain-language restatements, request readbacks, handoffs, visual explainers and independent decisions.",
   "author": {
     "name": "Dominic Reber"
