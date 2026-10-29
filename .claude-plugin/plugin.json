@@ -14,6 +14,7 @@
     "./skills/many-ways",
     "./skills/grilling",
     "./skills/grill-me",
-    "./skills/audit-fix"
+    "./skills/audit-fix",
+    "./skills/bye"
   ]
 }

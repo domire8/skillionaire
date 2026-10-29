@@ -13,6 +13,7 @@ A small personal set of agent skills for Claude Code.
 | `grilling` | Interviews you in rounds of questions, each with a recommended answer, until the plan has no open decisions. |
 | `grill-me` | Manual-only entry point to `grilling`. |
 | `audit-fix` | Fixes a failing dependency audit the way the repo's CI runs it, then opens a PR. |
+| `bye` | Closes out a session before you delete it: what it did, whether it is done, and what would be lost. |
 
 ## Install as a plugin
 
@@ -31,7 +32,7 @@ Every skill is imported from an upstream repository at the commit pinned in
 
 - `bro` from [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack) (pstack)
 - `handoff`, `grilling` and `grill-me` from [mattpocock/skills](https://github.com/mattpocock/skills) (MIT, see `THIRD_PARTY_NOTICES.md`)
-- `many-ways` and `audit-fix` are original
+- `many-ways`, `audit-fix` and `bye` are original
 - the other three from [backnotprop/bro](https://github.com/backnotprop/bro)
 
 Run `scripts/check-upstream.sh` (needs `gh` and `jq`) to see, per skill, whether
