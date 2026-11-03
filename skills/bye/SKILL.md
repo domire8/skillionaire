@@ -12,11 +12,18 @@ record; use the transcript only for what they don't hold.
 branches, stashes), and do not create issues, comments, memories or files,
 until the user confirms that specific action.
 
-Gather everything in one shell call: status (incl. ignored, skip .env*,
-node_modules, build output), commits not on origin, stashes, worktrees, and
-the branch's PR (skip `gh` on the default branch). With squash merges, judge
-by the PR: merged and local tip is (an ancestor of) `headRefOid` means
-nothing is lost.
+Gather everything in one shell call: status, ignored files (below), commits
+not on origin, stashes, worktrees, and the branch's PR (skip `gh` on the
+default branch). With squash merges, judge by the PR: merged and local tip
+is (an ancestor of) `headRefOid` means nothing is lost.
+
+In a worktree, ignored files die with it and plain `git status` hides them.
+List them (`git ls-files -oi --exclude-standard --directory`), drop
+regenerable ones (dependencies, build and cache output), and check whether
+each remaining path also exists in the main checkout; compare `.env*` by
+path only, never read them. Anything ignored that exists only in this
+worktree (notes, plans, scratch output, local config) goes under Would be
+lost and makes the verdict Not yet.
 
 Reply verdict first, then only sections with content:
 
@@ -26,8 +33,9 @@ Reply verdict first, then only sections with content:
   Name a decision only if its why is not already in a commit or PR.
 - **Open:** blockers only: unpushed or unmerged work, CI, reviews, running
   sessions, unverified claims.
-- **Would be lost:** items that exist only in the transcript or scratchpad,
-  each with a suggested home (memory, PR/issue comment, doc).
+- **Would be lost:** items that exist only in the transcript, scratchpad or
+  ignored worktree files, each with a suggested home (memory, PR/issue
+  comment, doc, copy to the main checkout).
 - **Cleanup:** exact commands, only if there is something to clean.
 
 When everything is clean, keep the whole answer under ~8 lines.
